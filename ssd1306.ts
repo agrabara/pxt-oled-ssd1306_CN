@@ -6,13 +6,14 @@ namespace OLED {
      * 初始化i2c OLED显示器
      * @param height height (in pixels)
      * @param width width (in pixels)
+     * @param address I2C address
      */
     //% weight=100
     //% blockId=oled_init_terminal
-    //% block="initialize OLED with height %height|width %width"
+    //% block="initialize OLED with height %height|width %width|address %address"
     //% icon="\uf1ec" 
     //% shim=OLED::init_terminal
-    export function init(height: number = 64, width: number = 128): void {
+    export function init(height: number = 64, width: number = 128, address: number = 60): void {
         return;
     }
 
