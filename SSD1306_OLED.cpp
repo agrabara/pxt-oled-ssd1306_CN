@@ -13,7 +13,7 @@ namespace OLED {
 		if (oled != NULL) delete oled;
 		oled = new Adafruit_SSD1306_I2c(i2c, SSD1306_ADDRESS, height, width);
 		oled->splash();
-        oled->setTextCursor(10, 1-);
+        oled->setTextCursor(10, 10);
         oled->printf("DUPA");
 		oled->display();
 	}
