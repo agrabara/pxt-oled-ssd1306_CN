@@ -26,10 +26,24 @@ namespace OLED {
 	}
 	
 	//%
+    void showStringXY(int x, int y, StringData *text) {
+		oled->setTextCursor(x, y);
+        oled->printf("%s", text->data);
+		oled->display();
+    }
+    
+    //%
     void showString(StringData *text) {
 		oled->printf("%s\n", text->data);
 		oled->display();
     }
+    
+    //%
+    void showNumberXY(iny x, int y, int number) {
+		oled->setTextCursor(x, y);
+        oled->printf("%d", number);
+		oled->display();
+	}
     
     //%
     void showNumber(int number) {

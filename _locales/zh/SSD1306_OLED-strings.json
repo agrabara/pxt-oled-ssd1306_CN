@@ -4,6 +4,8 @@
     "OLED.clear|block": "清除OLED屏幕",
     "OLED.showString|block": "OLED显示|字符串 %text",
     "OLED.showNumber|block": "OLED显示|数字 %number",
+    "OLED.showStringXY|block": "OLED显示|x %number|y %number|字符串 %text",
+    "OLED.showNumberXY|block": "OLED显示|x %number|y %number|数字 %number",
     "OLED.drawCircle|block": "画圆 x %x|y %y|r %r",
     "OLED.fillCircle|block": "填充圆 x %x|y %y|r %r",
     "OLED.drawLine|block": "画线 x0 %x0|y0 %y0|x1 %x1|y1 %y1",

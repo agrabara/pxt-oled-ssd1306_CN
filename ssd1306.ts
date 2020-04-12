@@ -45,6 +45,23 @@ namespace OLED {
     }
 
     /**
+         * OLED 128x64
+         * @param x position
+         * @param y position
+         * @param text text to display
+         */
+    //% weight=98 blockGap=8
+    //% block="show|x %number|y %number|string %text" 
+    //% async
+    //% blockId=oled_print_string
+    //% icon="\uf1ec"
+    //% shim=OLED::showStringXY
+    export function showStringXY(x: number, y: number, text: string): void {
+        console.log("display: " + text);
+        return;
+    }
+
+    /**
      * 在OLED显示器上打印数字
      * @param number number to display
      */
@@ -55,6 +72,22 @@ namespace OLED {
     //% shim=OLED::showNumber
     export function showNumber(number: number): void {
         console.log("display: " + number);
+        return;
+    }
+
+    /**
+     * OLED
+     * @param x position
+     * @param y position
+     * @param number number to display
+     */
+    //% weight=97
+    //% blockId=oled_print_number
+    //% block="show|x %number|y %number|number %number" blockGap=8
+    //% async 
+    //% shim=OLED::showNumberXY
+    export function showNumberXY(x: number, y: number, num: number): void {
+        console.log("display: " + num);
         return;
     }
 
