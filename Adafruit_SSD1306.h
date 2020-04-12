@@ -108,7 +108,7 @@ public:
 		, isDisplay(true)
 	    {
 		    begin();
-		    //splash();
+		    splash();
 		    display();
 	    };
 
