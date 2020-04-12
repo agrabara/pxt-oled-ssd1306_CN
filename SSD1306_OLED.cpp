@@ -4,7 +4,7 @@ using namespace pxt;
 
 namespace OLED {
 	#define SSD1306_ADDRESS 0x78
-	#undef printf
+	//#undef printf
 	
 	MicroBitI2C i2c(I2C_SDA0, I2C_SCL0);
 	Adafruit_SSD1306_I2c *oled;
@@ -149,6 +149,6 @@ namespace OLED {
 		}
     }
 
-    #define printf(...) uBit.serial.printf(__VA_ARGS__)
+    //#define printf(...) uBit.serial.printf(__VA_ARGS__)
 
 }
