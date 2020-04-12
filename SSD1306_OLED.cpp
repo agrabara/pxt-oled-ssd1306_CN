@@ -14,7 +14,7 @@ namespace OLED {
 		oled = new Adafruit_SSD1306_I2c(i2c, SSD1306_ADDRESS, height, width);
 		oled->splash();
         oled->setTextCursor(28, 54);
-        oled->printf("DUPA");
+        oled->printf("DUPA2");
 		oled->display();
 	}
 	
