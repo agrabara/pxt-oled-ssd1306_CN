@@ -69,7 +69,7 @@ namespace OLED {
     //% async 
     //% shim=OLED::onOffDisplay
     export function onOffDisplay(onOff: boolean = true): void {
-        console.log("display: " + onOff );
+        console.log("display: " + onOff);
         return;
     }
 
