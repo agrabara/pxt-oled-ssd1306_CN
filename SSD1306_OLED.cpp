@@ -39,7 +39,7 @@ namespace OLED {
     }
     
     //%
-    void showNumberXY(iny x, int y, int number) {
+    void showNumberXY(int x, int y, int number) {
 		oled->setTextCursor(x, y);
         oled->printf("%d", number);
 		oled->display();
