@@ -3,7 +3,7 @@
 using namespace pxt;
 
 namespace OLED {
-	#define SSD1306_ADDRESS 60
+	#define SSD1306_ADDRESS 0x78
 	#undef printf
 	
 	MicroBitI2C i2c(I2C_SDA0, I2C_SCL0);
