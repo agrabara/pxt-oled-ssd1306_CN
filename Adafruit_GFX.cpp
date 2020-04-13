@@ -388,7 +388,7 @@ size_t Adafruit_GFX::writeChar(uint8_t c)
             cursor_x = 0;
         }
     }
-    return 12;
+    return c;
 }
 
 // draw a character
