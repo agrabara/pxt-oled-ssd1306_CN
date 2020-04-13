@@ -70,8 +70,8 @@ namespace OLED {
     //% block="show|number %number" blockGap=8
     //% async 
     //% shim=OLED::showNumber
-    export function showNumber(number: number): void {
-        console.log("display: " + number);
+    export function showNumber(num: number): void {
+        console.log("display: " + num);
         return;
     }
 
