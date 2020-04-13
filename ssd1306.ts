@@ -3,7 +3,7 @@
 namespace OLED {
 
     /**
-     * 初始化i2c OLED显示器
+     * Initializes i2c OLED
      * @param height height (in pixels)
      * @param width width (in pixels)
      * @param address I2C address
@@ -18,7 +18,7 @@ namespace OLED {
     }
 
     /**
-     * 清除OLED屏幕
+     * Clears OLED display
      */
     //% weight=99
     //% blockId=oled_clear_screen
@@ -30,7 +30,7 @@ namespace OLED {
     }
 
     /**
-     * 在OLED显示器上打印字符串
+     * Shows text on OLED
      * @param text text to display
      */
     //% weight=98 blockGap=8
@@ -45,11 +45,11 @@ namespace OLED {
     }
 
     /**
-         * OLED 128x64
-         * @param x position
-         * @param y position
-         * @param text text to display
-         */
+    * Shows text on OLED with X Y position
+    * @param x position
+    * @param y position
+    * @param text text to display
+    */
     //% weight=98 blockGap=8
     //% block="show|x %number|y %number|string %text" 
     //% async
@@ -62,7 +62,7 @@ namespace OLED {
     }
 
     /**
-     * 在OLED显示器上打印数字
+     * Displays number on OLED
      * @param number number to display
      */
     //% weight=97
@@ -76,7 +76,7 @@ namespace OLED {
     }
 
     /**
-     * OLED
+     * Displays number on OLED with X Y position
      * @param x position
      * @param y position
      * @param number number to display
@@ -93,7 +93,7 @@ namespace OLED {
 
 
     /**
-     * 在OLED显示器上启用画图显示或者关闭画图显示
+     * OLED display on/off
      * @param onOffDisplay onOffDisplay to on or off display
      */
     //% weight=96
@@ -107,7 +107,7 @@ namespace OLED {
     }
 
     /**
-     * 画圆
+     * Draws circle
      * @param x x (in pixels)
      * @param y y (in pixels)
      * @param r r (in pixels)
@@ -122,7 +122,7 @@ namespace OLED {
     }
 
     /**
-     * 填充圆
+     * Draws filled circle
      * @param x x (in pixels)
      * @param y y (in pixels)
      * @param r r (in pixels)
@@ -137,7 +137,7 @@ namespace OLED {
     }
 
     /**
-     * 画线
+     * Draws line
      * @param x0 x0 (in pixels)
      * @param y0 y0 (in pixels)
      * @param x1 x1 (in pixels)
@@ -153,7 +153,7 @@ namespace OLED {
     }
 
     /**
-     * 画矩形
+     * Draws rectangle
      * @param x x (in pixels)
      * @param y y (in pixels)
      * @param w w (in pixels)
@@ -169,7 +169,7 @@ namespace OLED {
     }
 
     /**
-     * 填充矩形
+     * Draws filled rectangle
      * @param x x (in pixels)
      * @param y y (in pixels)
      * @param w w (in pixels)
@@ -185,7 +185,7 @@ namespace OLED {
     }
 
     /**
-     * 画带圆角的矩形
+     * Draws rounded rectangle
      * @param x x (in pixels)
      * @param y y (in pixels)
      * @param w w (in pixels)
@@ -202,7 +202,7 @@ namespace OLED {
     }
 
     /**
-     * 填充带圆角的矩形
+     * Draws filled rounded rectangle
      * @param x x (in pixels)
      * @param y y (in pixels)
      * @param w w (in pixels)
@@ -219,7 +219,7 @@ namespace OLED {
     }
 
     /**
-     * 画三角形
+     * Draws triangle
      * @param x0 x0 (in pixels)
      * @param y0 y0 (in pixels)
      * @param x1 x1 (in pixels)
@@ -237,7 +237,7 @@ namespace OLED {
     }
 
     /**
-     * 填充三角形
+     * Draws filled triangle
      * @param x0 x0 (in pixels)
      * @param y0 y0 (in pixels)
      * @param x1 x1 (in pixels)
