@@ -270,7 +270,7 @@ void Adafruit_SSD1306::splash(void)
 	textcolor = BLACK;
 	textbgcolor = WHITE;
 	setTextCursor(64-36,64-10);
-	this->printf("TINKERCADEMY");
+	this->printf("DUPA-DUPA");
 	
 	/* Reset to defaults */
 	setTextCursor(0, 0);

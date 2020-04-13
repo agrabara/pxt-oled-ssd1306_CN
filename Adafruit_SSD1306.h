@@ -51,7 +51,7 @@ public:
 class Adafruit_SSD1306 : public Adafruit_GFX
 {
 public:
-	Adafruit_SSD1306(uint8_t rawHeight = 32, uint8_t rawWidth = 128)
+	Adafruit_SSD1306(uint8_t rawHeight = 64, uint8_t rawWidth = 128)
 		: Adafruit_GFX(rawWidth,rawHeight)
 	{
 		buffer.resize(rawHeight * rawWidth / 8);
@@ -98,10 +98,10 @@ public:
 	 *
 	 * Optional parameters
 	 * @param i2cAddress - The i2c address of the display
-	 * @param rawHeight - The vertical number of pixels for the display, defaults to 32
+	 * @param rawHeight - The vertical number of pixels for the display, defaults to 64
 	 * @param rawWidth - The horizonal number of pixels for the display, defaults to 128
 	 */
-	Adafruit_SSD1306_I2c(MicroBitI2C i2c, uint8_t i2cAddress = SSD_I2C_ADDRESS, uint8_t rawHeight = 32, uint8_t rawWidth = 128)
+	Adafruit_SSD1306_I2c(MicroBitI2C i2c, uint8_t i2cAddress = SSD_I2C_ADDRESS, uint8_t rawHeight = 64, uint8_t rawWidth = 128)
 	    : Adafruit_SSD1306(rawHeight, rawWidth)
 	    , mi2c(i2c)
 	    , mi2cAddress(i2cAddress)
